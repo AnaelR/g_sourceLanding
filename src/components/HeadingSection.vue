@@ -1,17 +1,24 @@
 <template>
   <div class="dark-bg">
     <div class="first-section">
-      <img src="@/assets/images/logo_light.png" alt="Logo extension Source" />
-      <h1>
-        Créez des espaces de discussion pertinants en vérifiant vos sources
-      </h1>
-      <p>
-        Source est une extension web de Twitter qui vous permettra de vérifier
-        le contenu d’un tweet à l’aide d’un système de fiabilité de
-        l’information qui n’a jamais été aussi objectif.
-      </p>
-      <ButtonExtension />
+      <img
+        class="logo"
+        src="@/assets/images/logo_light.png"
+        alt="Logo extension Source"
+      />
+      <div class="first-section__centered">
+        <h1>
+          Créez des espaces de discussion pertinants en vérifiant vos sources
+        </h1>
+        <p>
+          Source est une extension web de Twitter qui vous permettra de vérifier
+          le contenu d’un tweet à l’aide d’un système de fiabilité de
+          l’information qui n’a jamais été aussi objectif.
+        </p>
+        <ButtonExtension class="cta-button" />
+      </div>
       <svg
+        class="cta-bottom"
         width="39"
         height="23"
         viewBox="0 0 39 23"
@@ -25,6 +32,14 @@
           stroke-width="2"
         />
       </svg>
+    </div>
+    <div class="second-section">
+      <h2>Participez à l’élaboration d’un débat plus sain</h2>
+      <p>
+        Source? s’utilise directement sur l’application web de Twitter et lorem
+        ipsum dolore sit amet
+      </p>
+      <img src="@/assets/images/video.png" alt="Video" />
     </div>
   </div>
 </template>
@@ -40,20 +55,68 @@ export default {
 
 <style lang="scss" scoped>
 .dark-bg {
+  background-image: url(@/assets/images/header-haut.png),
+    url(@/assets/images/header-fond-bas.png);
+  background-position: top right, bottom left;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 60%, 70%;
+  overflow-y: hidden;
   min-height: 100vh;
   background-color: $primary-color;
   .first-section {
-    width: 100vh;
+    .logo {
+      max-width: 40px;
+      margin-top: 45px;
+    }
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
     margin-left: 10%;
     color: $secondary-color;
-    h1 {
-      max-width: 550px;
-      margin-bottom: 25px;
+    &__centered {
+      display: flex;
+      flex-direction: column;
+      margin: auto 0;
+      h1 {
+        max-width: 550px;
+        margin-bottom: 25px;
+      }
+      p {
+        max-width: 550px;
+        font-size: $subtitle-size;
+        line-height: 1.5;
+        margin-bottom: 45px;
+      }
+    }
+    .cta-bottom {
+      position: absolute;
+      bottom: 45px;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+  }
+  .second-section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: $secondary-color;
+    width: 60%;
+    padding: 10% 0;
+    margin: auto;
+    h2 {
+      font-size: $h2-size;
+      font-weight: bold;
+      margin-bottom: 35px;
     }
     p {
-      max-width: 550px;
-      font-size: $subtitle-size;
-      line-height: 1.5;
+      margin-bottom: 65px;
+    }
+
+    img {
+      margin: 0 auto;
+      max-width: 700px;
     }
   }
 }
