@@ -31,6 +31,8 @@ export default {
             width: 70%;
             margin: auto;
             margin-bottom: 44px;
+            font-size: 20px;
+            line-height: 1.5rem;
         }
 
         img {
