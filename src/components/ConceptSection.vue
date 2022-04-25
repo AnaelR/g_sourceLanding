@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <h1>Coucouc je suis l'explication</h1>
+    <div class="">
         <FirstPart />
         <SecondPart />
         <ThirdPart />
@@ -19,5 +18,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    
+    .section {
+        padding: $margin-height $margin-width;
+    }
 </style>
