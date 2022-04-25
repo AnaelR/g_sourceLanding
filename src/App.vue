@@ -1,26 +1,20 @@
 <template>
-<HeadingSection />
+  <HeadingSection />
 </template>
 
 <script>
-import HeadingSection from './components/HeadingSection.vue'
+import HeadingSection from "./components/HeadingSection.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HeadingSection
-    
-  }
-}
+    HeadingSection,
+  },
+};
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>
