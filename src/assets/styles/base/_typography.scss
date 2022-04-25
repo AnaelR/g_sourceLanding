@@ -1,5 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+/* ubuntu-regular - latin */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url("@/assets/fonts/ubuntu-v19-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("@/assets/fonts/ubuntu-v19-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("@/assets/fonts/ubuntu-v19-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("@/assets/fonts/ubuntu-v19-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("@/assets/fonts/ubuntu-v19-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("@/assets/fonts/ubuntu-v19-latin-regular.svg#Ubuntu") format("svg"); /* Legacy iOS */
+}
 
-:root{
-    font-family: "Ubuntu" sans-serif;
+/* ubuntu-500 - latin */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  src: url("@/assets/fonts/ubuntu-v19-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("@/assets/fonts/ubuntu-v19-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("@/assets/fonts/ubuntu-v19-latin-500.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("@/assets/fonts/ubuntu-v19-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("@/assets/fonts/ubuntu-v19-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("@/assets/fonts/ubuntu-v19-latin-500.svg#Ubuntu") format("svg"); /* Legacy iOS */
+}
+
+/* ubuntu-700 - latin */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  src: url("@/assets/fonts/ubuntu-v19-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("@/assets/fonts/ubuntu-v19-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("@/assets/fonts/ubuntu-v19-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("@/assets/fonts/ubuntu-v19-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("@/assets/fonts/ubuntu-v19-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("@/assets/fonts/ubuntu-v19-latin-700.svg#Ubuntu") format("svg"); /* Legacy iOS */
 }
