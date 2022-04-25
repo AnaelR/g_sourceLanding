@@ -10,7 +10,7 @@
         le contenu d’un tweet à l’aide d’un système de fiabilité de
         l’information qui n’a jamais été aussi objectif.
       </p>
-      <a href="#" class="cta-extension">Ajouter l'extension à Chrome</a>
+      <ButtonExtension />
       <svg
         width="39"
         height="23"
@@ -30,7 +30,12 @@
 </template>
 
 <script>
-export default {};
+import ButtonExtension from "./Buttons/ButtonExtension.vue";
+export default {
+  components: {
+    ButtonExtension,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -41,7 +46,7 @@ export default {};
     width: 100vh;
     margin-left: 10%;
     color: $secondary-color;
-    h1{
+    h1 {
       max-width: 550px;
       margin-bottom: 25px;
     }
