@@ -104,6 +104,10 @@ export default {
         a {
             color: #fff;
             font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         h4 {
@@ -153,5 +157,9 @@ export default {
     a.button {
         white-space: nowrap;
         margin-left: 30px;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 </style>
