@@ -24,7 +24,9 @@
         Source? s’utilise directement sur l’application web de Twitter et lorem
         ipsum dolore sit amet
       </p>
-      <img src="@/assets/images/video.png" alt="Video"/>
+      <video controls>
+        <source src="@/assets/video_source.mp4" type="video/mp4">
+      </video>
     </div>
     <svg
         class="cta-bottom"
@@ -124,7 +126,7 @@ export default {
       margin-bottom: 65px;
     }
 
-    img {
+    video {
       margin: 0 auto;
       max-width: 700px;
     }
