@@ -3,7 +3,7 @@
         <div class="flex">
             <div style="margin-right: 50px;">
                 <h2 class="">Des débats dignes de ce nom sans vous inquiéter de la désinformation</h2>
-                <p style="margin-top: 32px">Source est une extension web de Twitter qui vous permettra de vérifier le contenu d’un tweet à l’aide d’un système de fiabilité de l’information qui n’a jamais été aussi objectif.</p>
+                <p>Source est une extension web de Twitter qui vous permettra de vérifier le contenu d’un tweet à l’aide d’un système de fiabilité de l’information qui n’a jamais été aussi objectif.</p>
             </div>
             <img src="@/assets/images/interface_1.png" alt="">
         </div>
@@ -28,5 +28,11 @@ export default {
     img {
         width: 50%;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+
+    p {
+        line-height: 1.25rem;
+        margin-top: 32px;
     }
 </style>

@@ -3,11 +3,13 @@
         <img src="@/assets/images/logo-source-black.png" alt="">
         <h3>Prêt à utiliser Source ?</h3>
         <p>Liez votre compte Twitter à Source en quelques clics et découvrez une toute nouvelle expérience du réseau social.</p>
-        <button></button>
+        <ButtonExtension style="margin: auto;" />
     </div>
 </template>
 <script>
+import ButtonExtension from './Buttons/ButtonExtension.vue'
 export default {
+  components: { ButtonExtension },
     
 }
 </script>
@@ -29,6 +31,8 @@ export default {
             width: 70%;
             margin: auto;
             margin-bottom: 44px;
+            font-size: 20px;
+            line-height: 1.5rem;
         }
 
         img {

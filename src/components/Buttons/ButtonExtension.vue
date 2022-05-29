@@ -1,5 +1,5 @@
 <template>
-  <a class="cta-extension" href="#">Ajouter à Chrome</a>
+  <a class="cta-extension" href="">Ajouter à Chrome</a>
 </template>
 
 <script>
@@ -8,6 +8,7 @@ export default {};
 
 <style lang="scss" scoped>
 .cta-extension {
+  display: block;
   padding: 10px 25px;
   background-color: $accent-color;
   color: $secondary-color;

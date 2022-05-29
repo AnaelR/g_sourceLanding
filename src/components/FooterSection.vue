@@ -62,7 +62,7 @@
                 <div class="divider"></div>
                 <div class="flex">
                     <p style="font-weight: 500; font-size: 18px;">Ajoutez l’extension Source? à votre navigateur et à votre compte Twitter</p>
-                    <button>Ajouter à Chrome</button>
+                    <ButtonExtension class="button" />
                 </div>
             </div>
         </div>
@@ -77,7 +77,9 @@
     </div>
 </template>
 <script>
+import ButtonExtension from './Buttons/ButtonExtension.vue'
 export default {
+  components: { ButtonExtension },
     
 }
 </script>
@@ -102,6 +104,10 @@ export default {
         a {
             color: #fff;
             font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         h4 {
@@ -146,5 +152,14 @@ export default {
         width: 100%;
         background-color: #fff;
         margin: 70px 0 40px;
+    }
+
+    a.button {
+        white-space: nowrap;
+        margin-left: 30px;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 </style>
