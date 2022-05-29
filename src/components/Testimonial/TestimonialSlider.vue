@@ -57,7 +57,6 @@ export default {
     this.sliderTimeline = gsap.timeline({paused: true}).to(".slider__container", {
       duration: 0.5,
       x: "-30vw",
-      ease: "expo.out"
     })
   },
   methods: {

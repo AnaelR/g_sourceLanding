@@ -94,6 +94,7 @@ export default {
   &__element {
     border-top: 2px solid $secondary-color;
     padding: 25px 0;
+    cursor: pointer;
 
     &:nth-last-child(1) {
       border-bottom: 2px solid $secondary-color;

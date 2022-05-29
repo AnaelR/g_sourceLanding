@@ -8,7 +8,7 @@
         utilisation, tous y trouvent leur compte et recommendent l’extension
         pour un environnement ,umérique plus sain.
       </p>
-      <TestimonialSlider />
+      <TestimonialSlider/>
     </div>
     <div class="faq">
       <h2>FAQs</h2>
@@ -18,7 +18,7 @@
         questions les plus fréquentes ou posez-nous la vôtre directement via
         notre page de contact !
       </p>
-      <TestimonialFaq />
+      <TestimonialFaq/>
     </div>
   </div>
 </template>
@@ -26,6 +26,7 @@
 <script>
 import TestimonialFaq from "./Testimonial/TestimonialFaq.vue";
 import TestimonialSlider from "./Testimonial/TestimonialSlider.vue";
+
 export default {
   components: {
     TestimonialSlider,
@@ -37,16 +38,23 @@ export default {
 <style lang="scss" scoped>
 .testimonial {
   background-color: $primary-color;
+  background-image: url(@/assets/images/header-fond-bas.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 100%;
   padding: 10% 0;
   overflow-x: hidden;
+
   h2 {
     margin-bottom: 25px;
   }
+
   p {
     line-height: 1.5;
     font-size: 16px;
     max-width: 800px;
   }
+
   &__content,
   .faq {
     color: $secondary-color;
